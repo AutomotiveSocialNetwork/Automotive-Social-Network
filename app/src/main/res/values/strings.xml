@@ -1,10 +1,25 @@
 <resources>
 
     <string name="app_name">TrackYourLocation</string>
-    <string name="add_textbox_hint">Add a ToDo item</string>
+
     <string name="add_button_text">Add</string>
     <string name="service_title">Mobile Apps </string>
     <string name="menu_refresh">Refresh</string>
-    <string name="checkbox_text">Item Text</string>
+
+
+    <string name="title_activity_maps">Map</string>
+    <string name="Search_btn">find</string>
+    <string name="mark">Mark</string>
+    <string name="sat">Sat</string>
+    <string name="save">save</string>
+    <string name="database">Db</string>
+    <string name="map">map</string>
+    <string name="delete_btn">delete</string>
+    <string name="title_activity_data_base">DataBase</string>
+    <string name="lat">Latitiude</string>
+    <string name="longitude">longitude</string>
+    <string name="location_name">location name</string>
+    <string name="title_activity_basic">basic</string>
+
 
 </resources>
