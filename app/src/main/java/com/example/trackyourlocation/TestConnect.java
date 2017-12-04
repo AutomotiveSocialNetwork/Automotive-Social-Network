@@ -114,7 +114,7 @@ public class TestConnect extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Intent i=new Intent(TestConnect.this, MainActivity.class);
+        Intent i=new Intent(TestConnect.this, MapsActivity.class);
 
         startActivity(i);
 

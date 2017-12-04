@@ -89,8 +89,12 @@ public class TestPost extends Activity{
             public void onClick(View v) {
 
 
+                Log.d(TAG, "onClick: start remove listdata "+listdata.size());
 
+
+                Log.d(TAG, "onClick: remove listdata "+listdata.size());
                 fetchMyFacebookStatuses();
+                //listdata.removeAll(listdata);//TODO gonna update later
 
 
             }
@@ -104,6 +108,7 @@ public class TestPost extends Activity{
     private void fetchMyFacebookStatuses()
     {
         Log.d(TAG, "fetchMyFacebookStatuses:  starts");
+        Log.d(TAG, "fetchMyFacebookStatuses: starts with listdata "+listdata.size());
         AsyncFacebookRunner syncinfo = new AsyncFacebookRunner(mFacebook);
 
         syncinfo.request("me/feed",new AsyncFacebookRunner.RequestListener() {
@@ -174,6 +179,7 @@ public class TestPost extends Activity{
 
         adapter.notifyDataSetChanged();
         list.setAdapter(adapter);
+        //listdata.removeAll(listdata);
         Log.d(TAG, "fetchMyFacebookStatuses: ends");
 
     }

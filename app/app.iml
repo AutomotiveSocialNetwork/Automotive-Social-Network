@@ -116,6 +116,8 @@
     <orderEntry type="library" exported="" name="com.google.code.gson:gson:2.3@jar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:mediarouter-v7-25.2.0" level="project" />
     <orderEntry type="library" exported="" name="com.google.guava:guava:18.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support.constraint:constraint-layout-solver:1.0.2@jar" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support.constraint:constraint-layout-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-vision-common-11.0.0" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-games-11.0.0" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-iid-11.0.0" level="project" />
