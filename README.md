@@ -1,6 +1,8 @@
 # Automotive-Social-Network
 ===========================
 ## First Version 
+### App
+![automotive_socialnetwork](https://user-images.githubusercontent.com/20757813/33595854-51e12da8-d9a2-11e7-8141-dd9034e0eeb1.gif)
 ### Screenshots in order :
 #### **App starting interface**
 >![screenshot_20171205-083025](https://user-images.githubusercontent.com/20757813/33593443-23d62d82-d998-11e7-8ea0-bd4758cba077.png )
