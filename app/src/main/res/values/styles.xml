@@ -13,20 +13,34 @@
     </style>
 
     <!-- Application theme. -->
+<<<<<<< HEAD
 
      <style name="AppTheme" parent="AppBaseTheme">
+=======
+    <style name="AppTheme" parent="AppBaseTheme">
+>>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+<<<<<<< HEAD
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.NoActionBar">-->
+=======
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar">
+>>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
 </resources>

@@ -20,7 +20,11 @@
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
     -->
+<<<<<<< HEAD
     <!--noha key-->
     <!--AIzaSyA2dLB4oxISW-kDGVVMwCeRqP2xTdYZZ4s-->
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBKHR7UM8Cm7UStF0UUx7QsNT7WN8TwwJc</string>
+=======
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA2dLB4oxISW-kDGVVMwCeRqP2xTdYZZ4s</string>
+>>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
 </resources>
