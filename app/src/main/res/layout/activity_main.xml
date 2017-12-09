@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <Button
+        android:text="FB module"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="97dp"
+        android:id="@+id/btn_fb" />
+
+
+
+    <Button
+        android:text="GPS module"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:layout_marginLeft="114dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="97dp"
+        android:id="@+id/btn_gps" />
+
+    <Button
+        android:text="Azure module"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="97dp"
+        android:id="@+id/btn_azure" />
+</LinearLayout>
