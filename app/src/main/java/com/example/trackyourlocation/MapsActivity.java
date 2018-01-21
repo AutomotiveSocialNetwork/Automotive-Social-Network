@@ -10,15 +10,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
-<<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
-=======
-import android.support.v4.app.FragmentActivity;
-import android.util.Log;
->>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -40,21 +35,13 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-<<<<<<< HEAD
 import com.google.android.gms.tasks.OnSuccessListener;
-=======
->>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
-
-<<<<<<< HEAD
 public class MapsActivity extends AppCompatActivity implements  OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener{
-=======
-public class MapsActivity extends FragmentActivity implements  OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener{
->>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
 
     private GoogleMap mMap;
 
@@ -85,12 +72,7 @@ public class MapsActivity extends FragmentActivity implements  OnMapReadyCallbac
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-
-<<<<<<< HEAD
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-=======
-
->>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -214,16 +196,12 @@ public class MapsActivity extends FragmentActivity implements  OnMapReadyCallbac
 
 
 
-<<<<<<< HEAD
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
 
-=======
->>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         RelativeLayout mylayout = (RelativeLayout) findViewById(R.id.mylayout);
@@ -321,8 +299,6 @@ public class MapsActivity extends FragmentActivity implements  OnMapReadyCallbac
 
         // Add a marker in Sydney and move the camera
         final LatLng sydney = new LatLng(-34, 151);
-
-<<<<<<< HEAD
         //TODO we will return back // done
         mFusedLocationProviderClient.getLastLocation()
                 .addOnSuccessListener(this, new OnSuccessListener<Location>() {
@@ -337,23 +313,21 @@ public class MapsActivity extends FragmentActivity implements  OnMapReadyCallbac
                             mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                     }
                 });
-=======
         //TODO we will return back
-//        mFusedLocationProviderClient.getLastLocation()
-//                .addOnSuccessListener(this, new OnSuccessListener<Location>() {
-//                    @Override
-//                    public void onSuccess(Location location) {
-//                        if(location!=null)
-//                        {
-//                            LatLng l=new LatLng(location.getLatitude(),location.getLongitude());
-//                            mMap.moveCamera(CameraUpdateFactory.newLatLng(l));
-//                        }
-//                        else
-//                            mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-//                    }
-//                });
->>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
-        //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        mFusedLocationProviderClient.getLastLocation()
+                .addOnSuccessListener(this, new OnSuccessListener<Location>() {
+                    @Override
+                    public void onSuccess(Location location) {
+                        if(location!=null)
+                        {
+                            LatLng l=new LatLng(location.getLatitude(),location.getLongitude());
+                            mMap.moveCamera(CameraUpdateFactory.newLatLng(l));
+                        }
+                        else
+                            mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                    }
+                });
+ mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
 
@@ -366,7 +340,6 @@ public class MapsActivity extends FragmentActivity implements  OnMapReadyCallbac
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
-
             mMap.setMyLocationEnabled(true);
         }
         // if permissin is not granted
@@ -440,8 +413,6 @@ public class MapsActivity extends FragmentActivity implements  OnMapReadyCallbac
         requestLocationUpdates();
     }
 
-<<<<<<< HEAD
-
     public  void  printDatabase(){
 
     }
@@ -452,10 +423,7 @@ public class MapsActivity extends FragmentActivity implements  OnMapReadyCallbac
         ss=s+" @"+ad.getLatitude()+"~"+ad.getLongitude();
         return ss;
     }*/
-
-=======
->>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
-    private void requestLocationUpdates() {
+ private void requestLocationUpdates() {
 
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
 
@@ -579,8 +547,6 @@ public class MapsActivity extends FragmentActivity implements  OnMapReadyCallbac
         super.onStop();
         googleApiClient.disconnect();
     }
-
-<<<<<<< HEAD
     public void delete (View view){
         EditText tt = (EditText)findViewById(R.id.etLocationEntry);
         String ss=tt.getText().toString();
@@ -588,6 +554,4 @@ public class MapsActivity extends FragmentActivity implements  OnMapReadyCallbac
         dBaddressHandler.deleteProduct(ss);
         Toast.makeText(getApplicationContext(), " DONE ", Toast.LENGTH_LONG).show();
     }
-=======
->>>>>>> 33b9aa6d34c14eded1e94e6741c6543d02e6e292
 }
